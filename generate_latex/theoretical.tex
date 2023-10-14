@@ -1,0 +1,119 @@
+\documentclass[10pt, twocolumn]{article}
+\usepackage{authblk} % \affil
+\usepackage[utf8]{inputenc}
+%Gummi|065|=)
+
+\title{\vspace{-2cm}\textbf{Theoretical Guide\\meia noite eu te conto}}
+\author{Victor Manuel, Maxwell Oliveira $\&$ Pablo Arruda}
+\affil{\textit{Thanks to UFMG - Humuhumunukunukuapua'a}}
+\date{}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lscape}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{rotating}
+\usepackage{ragged2e}
+\usepackage[a4paper, landscape, margin=0.8in]{geometry}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor,colortbl}
+\usepackage{tabu}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{diagbox}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{listings} % code
+\usepackage{mathtools} % DeclarePairedDelimiter
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+%color celula da tabela
+\usepackage{xcolor,colortbl}
+
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{3em}
+\graphicspath{ {img/} }
+\restylefloat{table}
+
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\definecolor{Gray}{gray}{0.85}
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+
+\newcommand{\stirlingfirst}[2]{\genfrac{[}{]}{0pt}{}{#1}{#2}}
+\newcommand{\stirlingsecond}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\lcm}{\mathrm{lcm}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand*\xor{\oplus}
+
+\pagestyle{fancy}
+
+\begin{document}
+\maketitle\section{Progressions}
+\input{theoretical/Progressions/geometric.tex}
+\input{theoretical/Progressions/arithmetic.tex}
+\section{C++}
+\input{theoretical/C++/general.tex}
+\input{theoretical/C++/Pragma optimize.tex}
+\input{theoretical/C++/Ordered set and multiset.tex}
+\input{theoretical/C++/Optimized unordered map.tex}
+\input{theoretical/C++/Interactive Problems.tex}
+\input{theoretical/C++/Input by file.tex}
+\section{Notes}
+\input{theoretical/Notes/general.tex}
+\section{Constants}
+\input{theoretical/Constants/general.tex}
+\input{theoretical/Constants/Some Powers of Two.tex}
+\input{theoretical/Constants/Some Factorials.tex}
+\section{Math}
+\input{theoretical/Math/general.tex}
+\input{theoretical/Math/trigonometry.tex}
+\input{theoretical/Math/logarithm.tex}
+\input{theoretical/Math/Truth Tables.tex}
+\input{theoretical/Math/De Morgan.tex}
+\input{theoretical/Math/2-SAT.tex}
+\section{Number Theory}
+\input{theoretical/Number Theory/general.tex}
+\input{theoretical/Number Theory/Sum of digits of N written in base b.tex}
+\input{theoretical/Number Theory/Some Primes.tex}
+\input{theoretical/Number Theory/Prime counting function.tex}
+\input{theoretical/Number Theory/Number of Divisors.tex}
+\input{theoretical/Number Theory/Large Prime Gaps.tex}
+\input{theoretical/Number Theory/Fermat's Theorem.tex}
+\input{theoretical/Number Theory/Divisibility Criteria.tex}
+\input{theoretical/Number Theory/Diophantine Equations.tex}
+\section{Bitwise}
+\input{theoretical/Bitwise/general.tex}
+\input{theoretical/Bitwise/XOR from 1 to N.tex}
+\section{Geometry}
+\input{theoretical/Geometry/trigonometry.tex}
+\input{theoretical/Geometry/triangle_existance_condition.tex}
+\input{theoretical/Geometry/shoelace.tex}
+\input{theoretical/Geometry/picks_theorem.tex}
+\input{theoretical/Geometry/distances.tex}
+\input{theoretical/Geometry/boundary_points.tex}
+\input{theoretical/Geometry/3D_Shapes.tex}
+\input{theoretical/Geometry/2D_Shapes.tex}
+\section{Identities}
+\input{theoretical/Identities/general.tex}
+\section{Counting Problems}
+\input{theoretical/Counting Problems/Burnside's Lemma.tex}
+
+\end{document}

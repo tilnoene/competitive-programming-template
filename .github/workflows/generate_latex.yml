@@ -1,0 +1,72 @@
+name: Generate PDF of Notebook and Theoretical
+run-name: Generating PDF of Notebook and Theoretical
+on: [push]
+
+jobs:
+  generate-pdfs:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: install latex packages
+        run: sudo apt install texlive texinfo texlive-fonts-recommended texlive-latex-extra
+
+      - name: checkout repository content
+        uses: actions/checkout@v3
+
+      - name: generating notebook pdf
+        run: python generate_latex/generate_notebook.py
+
+      - name: generating theoretical pdf
+        run: python generate_latex/generate_theoretical.py
+
+      - name: upload theoretical.pdf
+        uses: actions/upload-artifact@v3
+        with:
+          name: theoretical.pdf
+          path: ./theoretical.pdf
+      
+      - name: upload notebook.pdf
+        uses: actions/upload-artifact@v3
+        with:
+          name: notebook.pdf
+          path: ./notebook.pdf
+      
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: stage changed files
+        run: git add .
+      
+      - name: commit changed files
+        run: git commit -m "Auto updating notebook.pdf and theoretical.pdf"
+
+      - name: push code to main
+        run: git push origin HEAD:main
+
+  release-project:
+    needs: generate-pdfs
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: download artifact theoretical.pdf
+        uses: actions/download-artifact@v3
+        with:
+          name: theoretical.pdf
+
+      - name: download artifact notebook.pdf
+        uses: actions/download-artifact@v3
+        with:
+          name: notebook.pdf
+
+      - name: "create github release"
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: Notebook & Theoretical
+          files: |
+            theoretical.pdf
+            notebook.pdf
