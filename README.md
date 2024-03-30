@@ -6,9 +6,10 @@ This project consists of a template for competitive programming teams, containin
 
 - [Table of Contents](#table-of-contents)
 - [Getting Started](#getting-started)
-    - [Cloning this template](#clonning-this-template)
-    - [Team Information](#team-information)
+    - [Cloning this template](#cloning-this-template)
+    - [Team information](#team-information)
     - [Generating PDF](#generating-pdf)
+        - [Automatic generation](#automatic-generation)
 - [How to Use](#how-to-use)
     - [Notebook](#notebook)
         - [Categories](#categories)
@@ -33,7 +34,7 @@ Click the "**Use this template**" button in the top right corner, then select "*
 
 Now [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your repository to your machine (or use the [github online editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)).
 
-## Team Information
+## Team information
 
 Add information about your team in [template_notebook.tex](generate_latex/template_notebook.tex/) and [template_theoretical.tex](generate_latex/template_theoretical.tex/) (like the name, members, affiliation and so on). You can search for `% CONFIG:` in the files to find where to make changes.
 
@@ -72,6 +73,12 @@ python3 generate_latex/generate_theoretical.py
 ```
 
 After that, the pdf files will be in the project root folder ([notebook.pdf](notebook.pdf) and [notebook.pdf](theoretical.pdf)).
+
+### Automatic generation
+
+When a push is made to the main branch, updated PDFs will be generated automatically and will [appear on github](https://github.com/tilnoene/competitive-programming-template/releases/tag/latest) after a few minutes. There is no need to perform any additional configuration.
+
+_To avoid conflicts, you can delete the `notebook.pdf` and `theoretical.pdf` files before performing a push._
 
 # How to Use
 
