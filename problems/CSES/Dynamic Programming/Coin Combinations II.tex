@@ -1,0 +1,33 @@
+\subsection{\href{https://cses.fi/problemset/task/1636}{Coin Combinations II}}
+
+Consider a money system consisting of $n$ coins. Each coin has a positive integer value. Your task is to calculate the number of distinct ordered ways you can produce a money sum $x$ using the available coins.\\
+\hfill \break
+For example, if the coins are ${2,3,5}$ and the desired sum is $9$, there are $3$ ways:
+
+\begin{itemize}[noitemsep]
+    \item $2+2+5$
+    \item $3+3+3$
+    \item $2+2+2+3$
+\end{itemize}
+
+\textbf{Input}\\
+The first input line has two integers $n$ and $x$: the number of coins and the desired sum of money.
+
+The second line has $n$ distinct integers $c_1,c_2,…,c_n$: the value of each coin.\\
+\hfill \break
+\textbf{Output}\\
+Print one integer: the number of ways modulo $10^9+7$.\\
+\hfill \break
+\textbf{Constraints}\\
+\begin{itemize}[noitemsep]
+    \item $1 \leq n \leq 100 $
+    \item $1 \leq x \leq 10^6 $
+    \item $1 \leq c_i \leq 10^6 $
+\end{itemize}
+\textbf{Example}\\
+Input:\\
+3 9\\
+2 3 5\\
+\hfill \break
+Output:\\
+3

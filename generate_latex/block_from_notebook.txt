@@ -1,0 +1,9 @@
+# Filenames blocked from being included in notebook.tex
+#
+# Notes about this filetype:
+# - Comments start with #
+# - Entries like "meet in the middle" will be replaced by "meet_in_the_middle",
+#   but you can write "meet_in_the_middle" directly if you like
+
+# Graph
+dfs

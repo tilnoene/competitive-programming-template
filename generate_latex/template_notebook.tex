@@ -1,0 +1,73 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}                             % Configuração pacote babel
+\usepackage{multicol}                                   % Usage of multicolumns
+\usepackage{listings}                                   % Usage of code languages
+\usepackage{xcolor}                                     % Define colors
+\usepackage{graphicx}                                   % Usage of graphics eg.: Images
+\UseRawInputEncoding
+\usepackage[top=2cm, bottom=1.5cm, left=1cm, right=1cm]{geometry}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}       
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codePink}{rgb}{234, 0, 79}
+
+\newcommand\emoji[1]{                                   % New command "emoji"
+    \includegraphics[scale=0.1]{generate_latex/assets/emoji/#1}
+}
+
+\newcommand\includes[2]{ 
+   \subsection{#1}
+   \lstinputlisting{#2}
+}
+
+
+\lstset{                                                % C++ code configuration
+    language=c++,
+    tabsize=4,
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codePink},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% CONFIG: Header informations
+\lhead{\includegraphics[scale=0.011]{generate_latex/assets/UnB.png} University Name}
+\rhead{As Meninas Superpoderosas}
+
+% CONFIG: Title and team name
+\title{Competitive Programming Notebook} % \emoji{balloon} }         
+\author{As Meninas Superpoderosas}
+\date{}
+
+
+\begin{document}
+% \begin{figure}[t]
+% \includegraphics[scale=1]{assets/UnB.png}
+% \centering
+% \end{figure}
+\maketitle
+\thispagestyle{fancy}
+\begin{multicols}{2}
+
+\tableofcontents
+
+\newpage
+
