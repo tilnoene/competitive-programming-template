@@ -78,7 +78,7 @@ After that, the pdf files will be in the project root folder ([notebook.pdf](not
 
 When a push is made to the main branch, updated PDFs will be generated automatically and will [appear on github](https://github.com/tilnoene/competitive-programming-template/releases/tag/latest) after a few minutes. There is no need to perform any additional configuration.
 
-_To avoid conflicts, you can delete the `notebook.pdf` and `theoretical.pdf` files before performing a push._
+_To avoid conflicts, you can delete the `notebook.pdf` and `theoretical.pdf` files and then do a pull before performing a push._
 
 # How to Use
 
