@@ -1,6 +1,6 @@
 # Competitive Programming Template
 
-This project consists of a template for competitive programming teams, containing automatic PDF generation with codes and theory.
+This project consists of a template for competitive programming teams, containing automatic PDF generation with code and theory.
 
 ## Table of Contents
 
