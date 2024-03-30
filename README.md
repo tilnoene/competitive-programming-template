@@ -32,7 +32,7 @@ Click the "**Use this template**" button in the top right corner, then select "*
 
 <img src="./use_this_template.png" alt="Use this template button" />
 
-Now [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your repository to your machine (or use the [github online editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)).
+Now [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) **your** repository to your machine (or use the [github online editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)).
 
 ## Team information
 
