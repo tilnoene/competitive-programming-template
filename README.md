@@ -6,24 +6,32 @@ This project consists of a template for competitive programming teams, containin
 
 - [Table of Contents](#table-of-contents)
 - [Getting Started](#getting-started)
-    - [Fork This Project](#fork-this-project)
+    - [Cloning this template](#clonning-this-template)
     - [Team Information](#team-information)
     - [Generating PDF](#generating-pdf)
 - [How to Use](#how-to-use)
     - [Notebook](#notebook)
         - [Categories](#categories)
         - [Adding a code](#adding-a-code)
-        - [Ommiting files from PDF](#ommiting-files-from-PDF)
+        - [Ommiting files from PDF](#ommiting-files-from-pdf)
         - [Examples of notebook](#examples-of-notebook)
     - [Theoretical](#theoretical)
-        - [Categories](#categories)
+        - [Categories](#categories-1)
         - [Adding a theoretical information](#adding-a-theoretical-information)
-        - [Ommiting files from PDF](#ommiting-files-from-PDF)
+        - [Ommiting files from PDF](#ommiting-files-from-pdf-1)
         - [Examples of theoretical](#examples-of-theoretical)
     - [Modifying LaTeX](#modifying-latex)
 - [Contributors](#contributors)
 
 # Getting Started
+
+## Cloning this template
+
+Click the "**Use this template**" button in the top right corner, then select "**Create a new repository**", and then fill in the required information.
+
+<img src="./use_this_template.png" alt="Use this template button" />
+
+Now [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your repository to your machine (or use the [github online editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)).
 
 ## Team Information
 
@@ -152,7 +160,7 @@ You can omit certain files from appearing in the final PDF by adding their name 
 ### Examples of theoretical
 
 - [tilnoene](https://github.com/tilnoene/competitive-programming/tree/main/theoretical)
-- [brunomaletta](https://github.com/brunomaletta/Biblioteca/blob/master/pdf/theoretical.pdf).
+- [brunomaletta](https://github.com/brunomaletta/Biblioteca/blob/master/pdf/theoretical.pdf)
 
 ## Modifying LaTeX
 
