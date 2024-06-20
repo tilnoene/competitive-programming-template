@@ -7,6 +7,12 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
+      - name: sudo update
+        run: sudo apt update
+
+      - name: sudo upgrade
+        run: sudo apt upgrade
+      
       - name: install latex packages
         run: sudo apt install texlive texinfo texlive-fonts-recommended texlive-latex-extra
 
